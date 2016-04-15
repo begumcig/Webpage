@@ -28,6 +28,47 @@
   </head>
 
   <body>
+
+  <script>
+    function doFunction()
+    {
+      var rand = parseInt((Math.random()) * 8);
+      if (rand== 0){
+        document.write("run lola run")
+
+      }
+      else if(rand== 1){
+
+        document.write("the wave")
+      }
+      else if(rand== 2){
+          document.write("ran")
+        
+      }
+      else if(rand== 3){
+          document.write("the treasure of sierra madre")
+        
+      }
+      else if(rand== 4){
+          document.write("kung-fu hustle")
+        
+      }
+      else if(rand== 5){
+          document.write("the city of god")
+        
+      }
+      else if(rand== 6){
+
+        document.write("the fall")
+      }
+      else{
+
+        document.write("princess mononoke")
+
+      }
+    }
+
+  </script>
     
   <div class="container fluid">  
 
@@ -43,7 +84,10 @@
               <i class="fa fa-hand-rock-o fa-5x" aria-hidden="true"></i><br/>
               <h4 style="text-align: center;color:#6f6d6f;text-decoration: none;font-family: 'Open Sans', sans-serif;font-weight: bold;"> ACTION </h4>
             </button>
-            <h5 id="action" class="collapse" style="font-family: 'Lora', serif;font-weight:400;font-style:italic;clear:both;">Try to learn some of those moves.</h5>
+              <div id="action" class="collapse">
+                <h5 style="font-family: 'Lora', serif;font-weight:400;font-style:italic;clear:both;">Try to learn some of those moves.</h5>
+                <input id="clickMe" type="button" value="clickme" onclick="doFunction();" />
+              </div>
           </div>
         </div>
       </div>
