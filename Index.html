@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>WMSIWT</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -19,7 +19,10 @@
       <script src="js/html5shiv.min.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
-   
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
     
    
 
@@ -30,49 +33,184 @@
   <body>
 
   <script>
-    function doFunction()
+    function actionRand()
     {
       var rand = parseInt((Math.random()) * 8);
       if (rand== 0){
-        document.write("run lola run")
+       
+        document.body.innerHTML =("<div class=\"row\"><div class=\"col-sm-1\"><\/div><div class=\"col-sm-5\"><h1 style=\"font-family: 'Bevan', cursive;color:black;\">Run Lola Run (1998)<br><\/br><\/h1><h5 style=\"font-family: 'Lora', serif;color:gray;\">IMDB: 7.8<\/h5><p style=\"color: gray;font-family: 'Lora', serif;text-align:justify;\">Lola receives a phone call from her boyfriend Manni. He lost 100,000 DM in a subway train that belongs to a very bad guy. Lola has 20 min to raise this amount and meet Manni. Otherwise, he will rob a store to get the money. Three different alternatives may happen depending on some minor event along Lola's run.<\/p><div><input type=\"button\"; onClick=\"history.go(0)\"; value=\"Go to beginning\" style=\"border: none;background-color:#fffaff;\"><i class=\"fa fa-refresh\" aria-hidden=\"true\"></i><\/><input type=\"button\" value=\" Give me another\" style=\"border:none; background-color:#fffaff;\" onClick=\"actionRand();\" \/><i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"><\/i><\/div><\/div><div class=\"col-sm-6\"><div class=\"row\"><div class=\"col-sm-7\" style=\"margin-top:40px\";><div class=\"well\"><div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/uz2-D4lY2qg\"><\/iframe><\/div><\/div><\/div><div class=\"col-sm-5\"><\/div><\/div><\/div><\/div>");
+          
 
+          /*var x = document.createElement("P");
+    var t = document.createTextNode("This is a paragraph.");
+    x.appendChild(t);
+    document.body = t;
+    
+        var newDiv = document.createElement("div"); 
+  var newContent = document.createTextNode("Hi there and greetings!"); 
+  newDiv.appendChild(newContent); 
+  document.write(newContent);
+          var x = document.createElement("BUTTON");
+    var t = document.createTextNode("Click me");
+    x.appendChild(t);
+    document.body.appendChild(x);*/
+         
+         
       }
       else if(rand== 1){
 
-        document.write("the wave")
+        document.body.innerHTML =("<div class=\"row\"><div class=\"col-sm-1\"><\/div><div class=\"col-sm-5\"><h1 style=\"font-family: 'Bevan', cursive;color:black;\">The Wave (2008)<br><\/br><\/h1><h5 style=\"font-family: 'Lora', serif;color:gray;\">IMDB: 7.6<\/h5><p style=\"color: gray;font-family: 'Lora', serif;text-align:justify;\">A high school teacher's experiment to demonstrate to his students what life is like under a dictatorship spins horribly out of control when he forms a social unit with a life of its own.<\/p><div><input type=\"button\"; onClick=\"history.go(0)\"; value=\"Go to beginning\" style=\"border: none;background-color:#fffaff;\"><i class=\"fa fa-refresh\" aria-hidden=\"true\"></i><\/><input type=\"button\" value=\" Give me another\" style=\"border:none; background-color:#fffaff;\" onClick=\"actionRand();\" \/><i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"><\/i><\/div><\/div><div class=\"col-sm-6\"><div class=\"row\"><div class=\"col-sm-7\" style=\"margin-top:40px\";><div class=\"well\"><div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/4FYDF8wGn5E\"><\/iframe><\/div><\/div><\/div><div class=\"col-sm-5\"><\/div><\/div><\/div><\/div>");
       }
+
       else if(rand== 2){
-          document.write("ran")
-        
+
+         document.body.innerHTML =("<div class=\"row\"><div class=\"col-sm-1\"><\/div><div class=\"col-sm-5\"><h1 style=\"font-family: 'Bevan', cursive;color:black;\">Ran (1985)<br><\/br><\/h1><h5 style=\"font-family: 'Lora', serif;color:gray;\">IMDB: 8.3 <h5 style=\"color: red\">(Top:#132)<\/h5><\/h5><p style=\"color: gray;font-family: 'Lora', serif;text-align:justify;\">A story of greed, a lust for power, and ultimate revenge. The Great Lord Hidetora Ichimonji has decided to step aside to make room for the younger blood of his three sons, Taro, Jiro, and Saburo, the Lord's only wish now being to live out his years as an honored guest in the castle of each of his sons in turn. While the older two sons flatter their father, the youngest son attempts to warn him of the folly of expecting the three sons to remain united; enraged at the younger son's attempt to point out the danger, the father banishes him. True to the younger son's warning, however, the oldest Son soon conspires with the second son to strip The Great Lord of everything, even his title.<\/p><div><input type=\"button\"; onClick=\"history.go(0)\"; value=\"Go to beginning\" style=\"border: none;background-color:#fffaff;\"><i class=\"fa fa-refresh\" aria-hidden=\"true\"></i><\/><input type=\"button\" value=\" Give me another\" style=\"border:none; background-color:#fffaff;\" onClick=\"actionRand();\" \/><i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"><\/i><\/div><\/div><div class=\"col-sm-6\"><div class=\"row\"><div class=\"col-sm-7\" style=\"margin-top:40px\";><div class=\"well\"><div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/YwP_kXyd-Rw\"><\/iframe><\/div><\/div><\/div><div class=\"col-sm-5\"><\/div><\/div><\/div><\/div>");
       }
       else if(rand== 3){
-          document.write("the treasure of sierra madre")
+
+        document.body.innerHTML =("<div class=\"row\"><div class=\"col-sm-1\"><\/div><div class=\"col-sm-5\"><h1 style=\"font-family: 'Bevan', cursive;color:black;\">The Treasure of Sierra Madre (1948)<br><\/br><\/h1><h5 style=\"font-family: 'Lora', serif;color:gray;\">IMDB: 8.3 <h5 style=\"color: red\">(Top:#107)<\/h5><\/h5><p style=\"color: gray;font-family: 'Lora', serif;text-align:justify;\">Fred Dobbs and Bob Curtin, two Americans searching for work in Mexico, convince an old prospector to help them mine for gold in the Sierra Madre Mountains.<\/p><div><input type=\"button\"; onClick=\"history.go(0)\"; value=\"Go to beginning\" style=\"border: none;background-color:#fffaff;\"><i class=\"fa fa-refresh\" aria-hidden=\"true\"></i><\/><input type=\"button\" value=\" Give me another\" style=\"border:none; background-color:#fffaff;\" onClick=\"actionRand();\" \/><i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"><\/i><\/div><\/div><div class=\"col-sm-6\"><div class=\"row\"><div class=\"col-sm-7\" style=\"margin-top:40px\";><div class=\"well\"><div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/vGpvO8JabEc\"><\/iframe><\/div><\/div><\/div><div class=\"col-sm-5\"><\/div><\/div><\/div><\/div>");
+         
         
       }
       else if(rand== 4){
-          document.write("kung-fu hustle")
-        
+         document.body.innerHTML =("<div class=\"row\"><div class=\"col-sm-1\"><\/div><div class=\"col-sm-5\"><h1 style=\"font-family: 'Bevan', cursive;color:black;\">The Kung Fu Hustle (2004)<br><\/br><\/h1><h5 style=\"font-family: 'Lora', serif;color:gray;\">IMDB: 7.8 <\/h5><p style=\"color: gray;font-family: 'Lora', serif;text-align:justify;\">An extraordinary comedy.In Shanghai, China in the 1940s, a wannabe gangster aspires to join the notorious Axe Gang while residents of a housing complex exhibit extraordinary powers in defending their turf.<\/p><div><input type=\"button\"; onClick=\"history.go(0)\"; value=\"Go to beginning\" style=\"border: none;background-color:#fffaff;\"><i class=\"fa fa-refresh\" aria-hidden=\"true\"></i><\/><input type=\"button\" value=\" Give me another\" style=\"border:none; background-color:#fffaff;\" onClick=\"actionRand();\" \/><i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"><\/i><\/div><\/div><div class=\"col-sm-6\"><div class=\"row\"><div class=\"col-sm-7\" style=\"margin-top:40px\";><div class=\"well\"><div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/-m3IB7N_PRk\"><\/iframe><\/div><\/div><\/div><div class=\"col-sm-5\"><\/div><\/div><\/div><\/div>");
+          
       }
       else if(rand== 5){
-          document.write("the city of god")
-        
+        document.body.innerHTML =("<div class=\"row\"><div class=\"col-sm-1\"><\/div><div class=\"col-sm-5\"><h1 style=\"font-family: 'Bevan', cursive;color:black;\">City of God (2002)<br><\/br><\/h1><h5 style=\"font-family: 'Lora', serif;color:gray;\">IMDB: 8.7 <h5 style=\"color: red\">(Top:#27)<\/h5><\/h5><p style=\"color: gray;font-family: 'Lora', serif;text-align:justify;\">Two boys growing up in a violent neighborhood of Rio de Janeiro take different paths: one becomes a photographer, the other a drug dealer.<\/p><div><input type=\"button\"; onClick=\"history.go(0)\"; value=\"Go to beginning\" style=\"border: none;background-color:#fffaff;\"><i class=\"fa fa-refresh\" aria-hidden=\"true\"></i><\/><input type=\"button\" value=\" Give me another\" style=\"border:none; background-color:#fffaff;\" onClick=\"actionRand();\" \/><i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"><\/i><\/div><\/div><div class=\"col-sm-6\"><div class=\"row\"><div class=\"col-sm-7\" style=\"margin-top:40px\";><div class=\"well\"><div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/dcUOO4Itgmw\"><\/iframe><\/div><\/div><\/div><div class=\"col-sm-5\"><\/div><\/div><\/div><\/div>"); 
       }
       else if(rand== 6){
 
-        document.write("the fall")
+        document.body.innerHTML =("<div class=\"row\"><div class=\"col-sm-1\"><\/div><div class=\"col-sm-5\"><h1 style=\"font-family: 'Bevan', cursive;color:black;\">The Fall (2006)<br><\/br><\/h1><h5 style=\"font-family: 'Lora', serif;color:gray;\">IMDB: 7.9 <\/h5><p style=\"color: gray;font-family: 'Lora', serif;text-align:justify;\">In a hospital on the outskirts of 1920s Los Angeles, an injured stuntman begins to tell a fellow patient, a little girl with a broken arm, a fantastic story of five mythical heroes. Thanks to his fractured state of mind and her vivid imagination, the line between fiction and reality blurs as the tale advances.<\/p><div><input type=\"button\"; onClick=\"history.go(0)\"; value=\"Go to beginning\" style=\"border: none;background-color:#fffaff;\"><i class=\"fa fa-refresh\" aria-hidden=\"true\"></i><\/><input type=\"button\" value=\" Give me another\" style=\"border:none; background-color:#fffaff;\" onClick=\"actionRand();\" \/><i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"><\/i><\/div><\/div><div class=\"col-sm-6\"><div class=\"row\"><div class=\"col-sm-7\" style=\"margin-top:40px\";><div class=\"well\"><div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/IwsYyRc9j4g\"><\/iframe><\/div><\/div><\/div><div class=\"col-sm-5\"><\/div><\/div><\/div><\/div>");
+
       }
       else{
 
-        document.write("princess mononoke")
+        document.body.innerHTML =("<div class=\"row\"><div class=\"col-sm-1\"><\/div><div class=\"col-sm-5\"><h1 style=\"font-family: 'Bevan', cursive;color:black;\"> Princess Mononoke (1997)<br><\/br><\/h1><h5 style=\"font-family: 'Lora', serif;color:gray;\">IMDB: 8.4 <h5 style=\"color: red\">(Top:#65)<\/h5><\/h5><p style=\"color: gray;font-family: 'Lora', serif;text-align:justify;\">On a journey to find the cure for a Tatarigami's curse, Ashitaka finds himself in the middle of a war between the forest gods and Tatara, a mining colony. In this quest he also meets San, the Mononoke Hime.<\/p><div><input type=\"button\"; onClick=\"history.go(0)\"; value=\"Go to beginning\" style=\"border: none;background-color:#fffaff;\"><i class=\"fa fa-refresh\" aria-hidden=\"true\"></i><\/><input type=\"button\" value=\" Give me another\" style=\"border:none; background-color:#fffaff;\" onClick=\"actionRand();\" \/><i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"><\/i><\/div><\/div><div class=\"col-sm-6\"><div class=\"row\"><div class=\"col-sm-7\" style=\"margin-top:40px\";><div class=\"well\"><div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/4OiMOHRDs14\"><\/iframe><\/div><\/div><\/div><div class=\"col-sm-5\"><\/div><\/div><\/div><\/div>"); 
 
       }
     }
+
+
+     function chickRand()
+    {
+      var rand = parseInt((Math.random()) * 5);
+      if (rand== 0){
+        document.write("<h1 style=\"font-family: 'Georgia'\">The Notebook (2004)<\/h1><h5 style=\"font-family: 'Georgia';color:gray;\">IMDB: 7.9<\/h5><span style=\"color: gray;\">A poor and passionate young man falls in love with a rich young woman and gives her a sense of freedom. They soon are separated by their social differences.<\/span>");
+      }
+      else if(rand== 1){
+
+        document.write("<h1 style=\"font-family: 'Georgia'\">About Time (2013)<\/h1><h5 style=\"font-family: 'Georgia';color:gray;\">IMDB: 7.8<\/h5><span style=\"color: gray;\">At the age of 21, Tim discovers he can travel in time and change what happens and has happened in his own life. His decision to make his world a better place by getting a girlfriend turns out not to be as easy as you might think.<\/span>");
+      }
+      else if(rand== 2){
+          document.write("<h1 style=\"font-family: 'Georgia'\">Silver Linings Playbook (2012)<\/h1><h5 style=\"font-family: 'Georgia';color:gray;\">IMDB: 7.8 (Top:#132)<\/h5><span style=\"color: gray;\">After a stint in a mental institution, former teacher Pat Solitano moves back in with his parents and tries to reconcile with his ex-wife. Things get more challenging when Pat meets Tiffany, a mysterious girl with problems of her own.<\/span>");
+        
+      }
+      else if(rand== 3){
+          document.write("<h1 style=\"font-family: 'Georgia'\">The Before Triology: Sunrise (1995), Sunset (2004), Midnight (2013)<\/h1><h5 style=\"font-family: 'Georgia';color:gray;\">IMDB: 8.1 (Top: #206) / 8.0 (Top: #249) / 7.9<\/h5><span style=\"color: gray;\">Richard Linklater’s critically acclaimed film trilogy starring Ethan Hawke and Julie Delpy. Each film is spaced nine years apart and chronicles the developing love story of two people who meet on a train in Europe one fateful summer. Critically and commercially successful, Linklater’s trilogy may have flown under your radar but the superb writing and authentic performances make this romance trilogy the one to beat.<\/span>");
+        
+      }
+      else{
+          document.write("<h1 style=\"font-family: 'Georgia'\">Good Bye, Lenin! (2003)<\/h1><h5 style=\"font-family: 'Georgia';color:gray;\">IMDB: 7.7<\/h5><span style=\"color: gray;\">In 1990, to protect his fragile mother from a fatal shock after a long coma, a young man must keep her from learning that her beloved nation of East Germany as she knew it has disappeared.<\/span>");
+      }
+    }
+
+    function clsscRand(){
+
+      var rand = parseInt((Math.random()) * 9);
+      if (rand== 0){
+       
+        document.body.innerHTML =("<div class=\"row\"><div class=\"col-sm-1\"><\/div><div class=\"col-sm-5\"><h1 style=\"font-family: 'Bevan', cursive;color:black;\">Singin' in the Rain (1952)<br><\/br><\/h1><h5 style=\"font-family: 'Lora', serif;color:gray;\">IMDB: 8.3 <h5 style=\"color: red\">(Top:#91)<\/h5><\/h5><p style=\"color: gray;font-family: 'Lora', serif;text-align:justify;\">A silent film production company and cast make a difficult transition to sound.<\/p><div><input type=\"button\"; onClick=\"history.go(0)\"; value=\"Go to beginning\" style=\"border: none;background-color:#fffaff;\"><i class=\"fa fa-refresh\" aria-hidden=\"true\"></i><\/><input type=\"button\" value=\" Give me another\" style=\"border:none; background-color:#fffaff;\" onClick=\"clsscRand();\" \/><i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"><\/i><\/div><\/div><div class=\"col-sm-6\"><div class=\"row\"><div class=\"col-sm-7\" style=\"margin-top:40px\";><div class=\"well\"><div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/36QiuRc_3I8\"><\/iframe><\/div><\/div><\/div><div class=\"col-sm-5\"><\/div><\/div><\/div><\/div>");
+         
+      }
+      else if(rand== 1){
+
+        document.body.innerHTML =("<div class=\"row\"><div class=\"col-sm-1\"><\/div><div class=\"col-sm-5\"><h1 style=\"font-family: 'Bevan', cursive;color:black;\">Casablanca (1942) <br><\/br><\/h1><h5 style=\"font-family: 'Lora', serif;color:gray;\">IMDB: 8.6 <h5 style=\"color: red\">(Top:#33)<\/h5><p style=\"color: gray;font-family: 'Lora', serif;text-align:justify;\">In Casablanca, Morocco during the early days of World War II, an American expatriate meets a former lover, with unforeseen complications.<\/p><div><input type=\"button\"; onClick=\"history.go(0)\"; value=\"Go to beginning\" style=\"border: none;background-color:#fffaff;\"><i class=\"fa fa-refresh\" aria-hidden=\"true\"></i><\/><input type=\"button\" value=\" Give me another\" style=\"border:none; background-color:#fffaff;\" onClick=\"clsscRand();\" \/><i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"><\/i><\/div><\/div><div class=\"col-sm-6\"><div class=\"row\"><div class=\"col-sm-7\" style=\"margin-top:40px\";><div class=\"well\"><div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/EJvlGh_FgcI\"><\/iframe><\/div><\/div><\/div><div class=\"col-sm-5\"><\/div><\/div><\/div><\/div>");
+      }
+
+      else if(rand== 2){
+
+         document.body.innerHTML =("<div class=\"row\"><div class=\"col-sm-1\"><\/div><div class=\"col-sm-5\"><h1 style=\"font-family: 'Bevan', cursive;color:black;\">American Beauty (1999)<br><\/br><\/h1><h5 style=\"font-family: 'Lora', serif;color:gray;\">IMDB: 8.4 <h5 style=\"color: red\">(Top:#63)<\/h5><\/h5><p style=\"color: gray;font-family: 'Lora', serif;text-align:justify;\">A sexually frustrated suburban father has a mid-life crisis after becoming infatuated with his daughter's best friend.<\/p><div><input type=\"button\"; onClick=\"history.go(0)\"; value=\"Go to beginning\" style=\"border: none;background-color:#fffaff;\"><i class=\"fa fa-refresh\" aria-hidden=\"true\"></i><\/><input type=\"button\" value=\" Give me another\" style=\"border:none; background-color:#fffaff;\" onClick=\"clsscRand();\" \/><i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"><\/i><\/div><\/div><div class=\"col-sm-6\"><div class=\"row\"><div class=\"col-sm-7\" style=\"margin-top:40px\";><div class=\"well\"><div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/3ycmmJ6rxA8\"><\/iframe><\/div><\/div><\/div><div class=\"col-sm-5\"><\/div><\/div><\/div><\/div>");
+      }
+      else if(rand== 3){
+
+        document.body.innerHTML =("<div class=\"row\"><div class=\"col-sm-1\"><\/div><div class=\"col-sm-5\"><h1 style=\"font-family: 'Bevan', cursive;color:black;\">The Taxi Driver (1976)<br><\/br><\/h1><h5 style=\"font-family: 'Lora', serif;color:gray;\">IMDB: 8.3 <h5 style=\"color: red\">(Top:#80)<\/h5><\/h5><p style=\"color: gray;font-family: 'Lora', serif;text-align:justify;\">A mentally unstable Vietnam War veteran works as a night-time taxi driver in New York City where the perceived decadence and sleaze feeds his urge for violent action, attempting to save a preadolescent prostitute in the process.<\/p><div><input type=\"button\"; onClick=\"history.go(0)\"; value=\"Go to beginning\" style=\"border: none;background-color:#fffaff;\"><i class=\"fa fa-refresh\" aria-hidden=\"true\"></i><\/><input type=\"button\" value=\" Give me another\" style=\"border:none; background-color:#fffaff;\" onClick=\"clsscRand();\" \/><i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"><\/i><\/div><\/div><div class=\"col-sm-6\"><div class=\"row\"><div class=\"col-sm-7\" style=\"margin-top:40px\";><div class=\"well\"><div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/sLpMx8_TYOo\"><\/iframe><\/div><\/div><\/div><div class=\"col-sm-5\"><\/div><\/div><\/div><\/div>");
+         
+        
+      }
+      else if(rand== 4){
+         document.body.innerHTML =("<div class=\"row\"><div class=\"col-sm-1\"><\/div><div class=\"col-sm-5\"><h1 style=\"font-family: 'Bevan', cursive;color:black;\">2001: A Space Odyssey (1968)<br><\/br><\/h1><h5 style=\"font-family: 'Lora', serif;color:gray;\">IMDB: 8.3 <h5 style=\"color: red\">(Top:#89) <\/h5><p style=\"color: gray;font-family: 'Lora', serif;text-align:justify;\">Humanity finds a mysterious, obviously artificial object buried beneath the Lunar surface and, with the intelligent computer H.A.L. 9000, sets off on a quest.<\/p><div><input type=\"button\"; onClick=\"history.go(0)\"; value=\"Go to beginning\" style=\"border: none;background-color:#fffaff;\"><i class=\"fa fa-refresh\" aria-hidden=\"true\"></i><\/><input type=\"button\" value=\" Give me another\" style=\"border:none; background-color:#fffaff;\" onClick=\"clsscRand();\" \/><i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"><\/i><\/div><\/div><div class=\"col-sm-6\"><div class=\"row\"><div class=\"col-sm-7\" style=\"margin-top:40px\";><div class=\"well\"><div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/Z2UWOeBcsJI\"><\/iframe><\/div><\/div><\/div><div class=\"col-sm-5\"><\/div><\/div><\/div><\/div>");
+          
+      }
+      else if(rand== 5){
+        document.body.innerHTML =("<div class=\"row\"><div class=\"col-sm-1\"><\/div><div class=\"col-sm-5\"><h1 style=\"font-family: 'Bevan', cursive;color:black;\">Roman Holiday (1953)<br><\/br><\/h1><h5 style=\"font-family: 'Lora', serif;color:gray;\">IMDB: 8.1 <h5 style=\"color: red\">(Top:#240)<\/h5><\/h5><p style=\"color: gray;font-family: 'Lora', serif;text-align:justify;\">A bored and sheltered princess escapes her guardians and falls in love with an American newsman in Rome.<\/p><div><input type=\"button\"; onClick=\"history.go(0)\"; value=\"Go to beginning\" style=\"border: none;background-color:#fffaff;\"><i class=\"fa fa-refresh\" aria-hidden=\"true\"></i><\/><input type=\"button\" value=\" Give me another\" style=\"border:none; background-color:#fffaff;\" onClick=\"clsscRand();\" \/><i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"><\/i><\/div><\/div><div class=\"col-sm-6\"><div class=\"row\"><div class=\"col-sm-7\" style=\"margin-top:40px\";><div class=\"well\"><div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/9GzCG6lpFUw\"><\/iframe><\/div><\/div><\/div><div class=\"col-sm-5\"><\/div><\/div><\/div><\/div>"); 
+      }
+      else if(rand== 6){
+
+        document.body.innerHTML =("<div class=\"row\"><div class=\"col-sm-1\"><\/div><div class=\"col-sm-5\"><h1 style=\"font-family: 'Bevan', cursive;color:black;\">Annie Hall (1977)<br><\/br><\/h1><h5 style=\"font-family: 'Lora', serif;color:gray;\">IMDB: 8.1 <h5 style=\"color: red\">(Top:#196) <\/h5><p style=\"color: gray;font-family: 'Lora', serif;text-align:justify;\">Neurotic New York comedian Alvy Singer falls in love with the ditsy Annie Hall.<\/p><div><input type=\"button\"; onClick=\"history.go(0)\"; value=\"Go to beginning\" style=\"border: none;background-color:#fffaff;\"><i class=\"fa fa-refresh\" aria-hidden=\"true\"></i><\/><input type=\"button\" value=\" Give me another\" style=\"border:none; background-color:#fffaff;\" onClick=\"clsscRand();\" \/><i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"><\/i><\/div><\/div><div class=\"col-sm-6\"><div class=\"row\"><div class=\"col-sm-7\" style=\"margin-top:40px\";><div class=\"well\"><div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/OqVgCfZX-yE\"><\/iframe><\/div><\/div><\/div><div class=\"col-sm-5\"><\/div><\/div><\/div><\/div>");
+
+      }
+
+      else if(rand== 7){
+
+        document.body.innerHTML =("<div class=\"row\"><div class=\"col-sm-1\"><\/div><div class=\"col-sm-5\"><h1 style=\"font-family: 'Bevan', cursive;color:black;\">Forrest Gump (1994)<br><\/br><\/h1><h5 style=\"font-family: 'Lora', serif;color:gray;\">IMDB: 8.8 <h5 style=\"color: red\">(Top:#13) <\/h5><p style=\"color: gray;font-family: 'Lora', serif;text-align:justify;\">Forrest Gump, while not intelligent, has accidentally been present at many historic moments, but his true love, Jenny Curran, eludes him.<\/p><div><input type=\"button\"; onClick=\"history.go(0)\"; value=\"Go to beginning\" style=\"border: none;background-color:#fffaff;\"><i class=\"fa fa-refresh\" aria-hidden=\"true\"></i><\/><input type=\"button\" value=\" Give me another\" style=\"border:none; background-color:#fffaff;\" onClick=\"clsscRand();\" \/><i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"><\/i><\/div><\/div><div class=\"col-sm-6\"><div class=\"row\"><div class=\"col-sm-7\" style=\"margin-top:40px\";><div class=\"well\"><div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/uPIEn0M8su0\"><\/iframe><\/div><\/div><\/div><div class=\"col-sm-5\"><\/div><\/div><\/div><\/div>");
+
+      }
+
+
+      else{
+
+        document.body.innerHTML =("<div class=\"row\"><div class=\"col-sm-1\"><\/div><div class=\"col-sm-5\"><h1 style=\"font-family: 'Bevan', cursive;color:black;\">The Apartment (1960)<br><\/br><\/h1><h5 style=\"font-family: 'Lora', serif;color:gray;\">IMDB: 8.3 <h5 style=\"color: red\">(Top:#100)<\/h5><\/h5><p style=\"color: gray;font-family: 'Lora', serif;text-align:justify;\">A man tries to rise in his company by letting its executives use his apartment for trysts, but complications and a romance of his own ensue.<\/p><div><input type=\"button\"; onClick=\"history.go(0)\"; value=\"Go to beginning\" style=\"border: none;background-color:#fffaff;\"><i class=\"fa fa-refresh\" aria-hidden=\"true\"></i><\/><input type=\"button\" value=\" Give me another\" style=\"border:none; background-color:#fffaff;\" onClick=\"clsscRand();\" \/><i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"><\/i><\/div><\/div><div class=\"col-sm-6\"><div class=\"row\"><div class=\"col-sm-7\" style=\"margin-top:40px\";><div class=\"well\"><div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/B4OXm9-E8OQ\"><\/iframe><\/div><\/div><\/div><div class=\"col-sm-5\"><\/div><\/div><\/div><\/div>"); 
+
+      }
+    }
+
+    function clssyRand(){
+
+      var rand = parseInt((Math.random()) * 7);
+      if (rand== 0){
+       
+        document.body.innerHTML =("<div class=\"row\"><div class=\"col-sm-1\"><\/div><div class=\"col-sm-5\"><h1 style=\"font-family: 'Bevan', cursive;color:black;\">Her (2013)<br><\/br><\/h1><h5 style=\"font-family: 'Lora', serif;color:gray;\">IMDB: 8.0<\/h5><p style=\"color: gray;font-family: 'Lora', serif;text-align:justify;\">A lonely writer develops an unlikely relationship with his newly purchased operating system that's designed to meet his every need.<\/p><div><input type=\"button\"; onClick=\"history.go(0)\"; value=\"Go to beginning\" style=\"border: none;background-color:#fffaff;\"><i class=\"fa fa-refresh\" aria-hidden=\"true\"></i><\/><input type=\"button\" value=\" Give me another\" style=\"border:none; background-color:#fffaff;\" onClick=\"clssyRand();\" \/><i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"><\/i><\/div><\/div><div class=\"col-sm-6\"><div class=\"row\"><div class=\"col-sm-7\" style=\"margin-top:40px\";><div class=\"well\"><div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/WzV6mXIOVl4\"><\/iframe><\/div><\/div><\/div><div class=\"col-sm-5\"><\/div><\/div><\/div><\/div>");
+         
+      }
+      else if(rand== 1){
+
+        document.body.innerHTML =("<div class=\"row\"><div class=\"col-sm-1\"><\/div><div class=\"col-sm-5\"><h1 style=\"font-family: 'Bevan', cursive;color:black;\">The Grand Budapest Hotel (2014) <br><\/br><\/h1><h5 style=\"font-family: 'Lora', serif;color:gray;\">IMDB: 8.1 <h5 style=\"color: red\">(Top:#189)<\/h5><p style=\"color: gray;font-family: 'Lora', serif;text-align:justify;\">The adventures of Gustave H, a legendary concierge at a famous hotel from the fictional Republic of Zubrowka between the first and second World Wars, and Zero Moustafa, the lobby boy who becomes his most trusted friend.<\/p><div><input type=\"button\"; onClick=\"history.go(0)\"; value=\"Go to beginning\" style=\"border: none;background-color:#fffaff;\"><i class=\"fa fa-refresh\" aria-hidden=\"true\"></i><\/><input type=\"button\" value=\" Give me another\" style=\"border:none; background-color:#fffaff;\" onClick=\"clssyRand();\" \/><i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"><\/i><\/div><\/div><div class=\"col-sm-6\"><div class=\"row\"><div class=\"col-sm-7\" style=\"margin-top:40px\";><div class=\"well\"><div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/1Fg5iWmQjwk\"><\/iframe><\/div><\/div><\/div><div class=\"col-sm-5\"><\/div><\/div><\/div><\/div>");
+      }
+
+      else if(rand== 2){
+
+         document.body.innerHTML =("<div class=\"row\"><div class=\"col-sm-1\"><\/div><div class=\"col-sm-5\"><h1 style=\"font-family: 'Bevan', cursive;color:black;\">Populaire (2012)<br><\/br><\/h1><h5 style=\"font-family: 'Lora', serif;color:gray;\">IMDB: 6.9<\/h5><p style=\"color: gray;font-family: 'Lora', serif;text-align:justify;\">1958. Rose is a terrible secretary but a demon typist. Her handsome boss resolves to turn her into the fastest girl in the world.<\/p><div><input type=\"button\"; onClick=\"history.go(0)\"; value=\"Go to beginning\" style=\"border: none;background-color:#fffaff;\"><i class=\"fa fa-refresh\" aria-hidden=\"true\"></i><\/><input type=\"button\" value=\" Give me another\" style=\"border:none; background-color:#fffaff;\" onClick=\"clssyRand();\" \/><i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"><\/i><\/div><\/div><div class=\"col-sm-6\"><div class=\"row\"><div class=\"col-sm-7\" style=\"margin-top:40px\";><div class=\"well\"><div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/i6upoz9I7eg\"><\/iframe><\/div><\/div><\/div><div class=\"col-sm-5\"><\/div><\/div><\/div><\/div>");
+      }
+      else if(rand== 3){
+
+        document.body.innerHTML =("<div class=\"row\"><div class=\"col-sm-1\"><\/div><div class=\"col-sm-5\"><h1 style=\"font-family: 'Bevan', cursive;color:black;\">An Education (2009)<br><\/br><\/h1><h5 style=\"font-family: 'Lora', serif;color:gray;\">IMDB: 7.3<\/h5><p style=\"color: gray;font-family: 'Lora', serif;text-align:justify;\">A coming-of-age story about a teenage girl in 1960s suburban London, and how her life changes with the arrival of a playboy nearly twice her age.<\/p><div><input type=\"button\"; onClick=\"history.go(0)\"; value=\"Go to beginning\" style=\"border: none;background-color:#fffaff;\"><i class=\"fa fa-refresh\" aria-hidden=\"true\"></i><\/><input type=\"button\" value=\" Give me another\" style=\"border:none; background-color:#fffaff;\" onClick=\"clssyRand();\" \/><i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"><\/i><\/div><\/div><div class=\"col-sm-6\"><div class=\"row\"><div class=\"col-sm-7\" style=\"margin-top:40px\";><div class=\"well\"><div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/qn9IMe5jmf0\"><\/iframe><\/div><\/div><\/div><div class=\"col-sm-5\"><\/div><\/div><\/div><\/div>");
+         
+        
+      }
+      else if(rand== 4){
+         document.body.innerHTML =("<div class=\"row\"><div class=\"col-sm-1\"><\/div><div class=\"col-sm-5\"><h1 style=\"font-family: 'Bevan', cursive;color:black;\">Midnight in Paris (2011)<br><\/br><\/h1><h5 style=\"font-family: 'Lora', serif;color:gray;\">IMDB: 7.7<p style=\"color: gray;font-family: 'Lora', serif;text-align:justify;\">While on a trip to Paris with his fiancée's family, a nostalgic screenwriter finds himself mysteriously going back to the 1920s everyday at midnight.<\/p><div><input type=\"button\"; onClick=\"history.go(0)\"; value=\"Go to beginning\" style=\"border: none;background-color:#fffaff;\"><i class=\"fa fa-refresh\" aria-hidden=\"true\"></i><\/><input type=\"button\" value=\" Give me another\" style=\"border:none; background-color:#fffaff;\" onClick=\"clssyRand();\" \/><i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"><\/i><\/div><\/div><div class=\"col-sm-6\"><div class=\"row\"><div class=\"col-sm-7\" style=\"margin-top:40px\";><div class=\"well\"><div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/FAfR8omt-CY\"><\/iframe><\/div><\/div><\/div><div class=\"col-sm-5\"><\/div><\/div><\/div><\/div>");
+          
+      }
+      else if(rand== 5){
+        document.body.innerHTML =("<div class=\"row\"><div class=\"col-sm-1\"><\/div><div class=\"col-sm-5\"><h1 style=\"font-family: 'Bevan', cursive;color:black;\">In The Mood For Love (2000)<br><\/br><\/h1><h5 style=\"font-family: 'Lora', serif;color:gray;\">IMDB: 8.1 <h5 style=\"color: red\">(Top:#244)<\/h5><\/h5><p style=\"color: gray;font-family: 'Lora', serif;text-align:justify;\">Two neighbors, a woman and a man, form a strong bond after both suspect extramarital activities of their spouses. However, they agree to keep their bond platonic so as not to commit similar wrongs.<\/p><div><input type=\"button\"; onClick=\"history.go(0)\"; value=\"Go to beginning\" style=\"border: none;background-color:#fffaff;\"><i class=\"fa fa-refresh\" aria-hidden=\"true\"></i><\/><input type=\"button\" value=\" Give me another\" style=\"border:none; background-color:#fffaff;\" onClick=\"clssyRand();\" \/><i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"><\/i><\/div><\/div><div class=\"col-sm-6\"><div class=\"row\"><div class=\"col-sm-7\" style=\"margin-top:40px\";><div class=\"well\"><div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/BnFjSHQFVkA\"><\/iframe><\/div><\/div><\/div><div class=\"col-sm-5\"><\/div><\/div><\/div><\/div>"); 
+      }
+      else{
+
+        document.body.innerHTML =("<div class=\"row\"><div class=\"col-sm-1\"><\/div><div class=\"col-sm-5\"><h1 style=\"font-family: 'Bevan', cursive;color:black;\">Moulin Rouge! (2001) <br><\/br><\/h1><h5 style=\"font-family: 'Lora', serif;color:gray;\">IMDB: 7.6 <p style=\"color: gray;font-family: 'Lora', serif;text-align:justify;\">A poet falls for a beautiful courtesan whom a jealous duke covets in this stylish musical, with music drawn from familiar 20th century sources.<\/p><div><input type=\"button\"; onClick=\"history.go(0)\"; value=\"Go to beginning\" style=\"border: none;background-color:#fffaff;\"><i class=\"fa fa-refresh\" aria-hidden=\"true\"></i><\/><input type=\"button\" value=\" Give me another\" style=\"border:none; background-color:#fffaff;\" onClick=\"clssyRand();\" \/><i class=\"fa fa-lightbulb-o\" aria-hidden=\"true\"><\/i><\/div><\/div><div class=\"col-sm-6\"><div class=\"row\"><div class=\"col-sm-7\" style=\"margin-top:40px\";><div class=\"well\"><div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/2PpgPxjzbkA\"><\/iframe><\/div><\/div><\/div><div class=\"col-sm-5\"><\/div><\/div><\/div><\/div>");
+
+      }
+    }
+
+
+
+    
 
   </script>
     
   <div class="container fluid">  
 
-    <h1 style="text-align:center; color:black; font-family: 'Bevan', cursive; margin-bottom:90px;font-size:450%;">Which Movie Shall I Watch Tonight? </h1>
+    <h1 style="text-align:center; color:black; font-family: 'Bevan', cursive; margin-bottom:90px;font-size:450%;">Which Movie Should I Watch Tonight? </h1>
 
 
     <div class="row">
@@ -86,7 +224,7 @@
             </button>
               <div id="action" class="collapse">
                 <h5 style="font-family: 'Lora', serif;font-weight:400;font-style:italic;clear:both;">Try to learn some of those moves.</h5>
-                <input id="clickMe" type="button" value="clickme" onclick="doFunction();" />
+                <input id="Go" type="button" value="Go!" style="border:none; background-color:#fffaff;" onclick="actionRand();" />
               </div>
           </div>
         </div>
@@ -99,7 +237,10 @@
               <img src="chicken-64.png" /><br/>
               <h4 style="text-align: center;color:#6f6d6f;text-decoration: none;font-family: 'Open Sans', sans-serif;font-weight: bold;"> CHICK FLICK </h4>
             </button>
-            <h5 id="chickflick" class="collapse" style="font-family: 'Lora', serif;font-weight:400;font-style:italic;clear:both;">Admit it, you love them.</h5>
+             <div id="chickflick" class="collapse">
+                <h5 style="font-family: 'Lora', serif;font-weight:400;font-style:italic;clear:both;">Admit it, you love them.</h5>
+                <input id="Go" type="button" value="Go!" style="border:none; background-color:#fffaff;" onclick="chickRand();" />
+              </div>
           </div> 
 
           <div class="col-sm-6" style="text-align:center;">
@@ -107,7 +248,10 @@
               <i class="fa fa-thumb-tack fa-5x" aria-hidden="true"></i><br/>
               <h4 style="text-align: center;color:#6f6d6f;text-decoration: none;font-family: 'Open Sans', sans-serif;font-weight: bold;"> CLASSIC</h4>
             </button>
-            <h5 id="classic" class="collapse" style="font-family: 'Lora', serif;font-weight:400;font-style:italic;clear:both;text-alignment:justified;">Don't let your friends say "I can't believe you haven't watched it!"</h5>
+             <div id="classic" class="collapse">
+                <h5 style="font-family: 'Lora', serif;font-weight:400;font-style:italic;clear:both;">Don't let your friends say "I can't believe you haven't watched it!"</h5>
+                <input id="Go" type="button" value="Go!" style="border:none; background-color:#fffaff;" onclick="clsscRand();" />
+              </div>
           </div>  
         </div>
       </div>
@@ -119,7 +263,11 @@
               <i class="fa fa-black-tie fa-5x" aria-hidden="true"></i><br/>
               <h4 style="text-align: center;color:#6f6d6f;text-decoration: none;font-family: 'Open Sans', sans-serif;font-weight: bold;"> CLASSY</h4>
             </button>
-            <h5 id="classy" class="collapse" style="font-family: 'Lora', serif;font-weight:400;font-style:italic;clear:both;">Don't forget to follow the story whilst busy looking at stuff.</h5>
+             <div id="classy" class="collapse">
+                <h5 style="font-family: 'Lora', serif;font-weight:400;font-style:italic;clear:both;">Don't forget to follow the story whilst busy looking at stuff.</h5>
+                <input id="Go" type="button" value="Go!" style="border:none; background-color:#fffaff;" onclick="clssyRand();" />
+              </div>
+            <h5 id="classy" class="collapse" style="font-family: 'Lora', serif;font-weight:400;font-style:italic;clear:both;"></h5>
           </div>  
 
           <div class="col-sm-6" style="text-align:center;">
@@ -153,9 +301,6 @@
      
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+  
   </body>
 </html>
