@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="formjs.js"></script>
+		<link rel="stylesheet" type="text/css" href="formstyle.css" />
+	</head>
+	<body>
+		<div id="popupbck"></div>
+		<div id="popup">
+			<form action="#" method="post" enctype="text/plain">
+				<span class="popuptext">Name:</span><br>
+
+				<input type="text" name="name" id="name" placeholder="e.g. Donnie" autocomplete="off" autofocus><br>
+
+				<span class="popuptext">E-mail<span class="red">*</span>:</span><br>
+
+				<input type="text" name="mail" id="mail" placeholder="donnie@darko.com" autocomplete="off" required><br>
+
+				<span class="popuptext">Comment<span class="red">*</span>:</span><br>
+
+				<textarea name="comment" id="comment" placeholder="they made me do it." autocomplete="off" required></textarea><br><br>
+
+				<a id="submit" href="javascript: check_empty()">Send</a>
+
+				<input type="reset" value="Reset">
+			</form>
+		</div>
+		
+		<div>
+			<CENTER><h1>Click Button To Popup Form Using Javascript</h1>
+	        <button id = "popupbutton" onclick ="div_show()">Popup</button></CENTER>
+		</div>
+	</body>
+</html>

@@ -10,6 +10,8 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="main.css"/>
+    <script src="formjs.js"></script>
+    <link rel="stylesheet" type="text/css" href="formstyle.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:400,300,300italic,200|Lora:400,400italic,700italic|Bevan' rel='stylesheet' type='text/css'>
 
@@ -23,16 +25,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    
-   
-
-
-
   </head>
 
   <body>
 
   <script>
+
+  $("#name").focus();
+
     function actionRand()
     {
       var rand = parseInt((Math.random()) * 8);
@@ -455,7 +455,10 @@ function indRand(){
     
   <div class="container fluid">  
 
+  <div style="position:relative">
     <h1 style="text-align:center; color:black; font-family: 'Bevan', cursive; margin-bottom:90px;font-size:450%;">Which Movie Should I Watch Tonight? </h1>
+    <input id="Feedback" type="button" value="Feedback" style="border:none; background-color:#fffaff;text-align:right;position:absolute;top:150px;left:92%;color:#6f6d6f;text-decoration: none;font-family: 'Open Sans', sans-serif;font-weight:300" onclick="div_show();" />  
+  </div>
 
 
     <div class="row" >
@@ -553,7 +556,7 @@ function indRand(){
           <div class="col-sm-6" style="text-align: center;">
             <button data-toggle="collapse" data-target="#sci-fnt" style="border: none;background-color:#fffaff;">
               <i class="fa fa-magic fa-5x" aria-hidden="true"></i><br/>
-              <h4 style="text-align: centerstyle="marign-top:100px;";color:#6f6d6f;text-decoration: none;font-family: 'Open Sans', sans-serif;font-weight: bold;"> FANTASY / SCI-FI </h4>
+              <h4 style="text-align: centerstyle=marign-top:100px;color:#6f6d6f;text-decoration: none;font-family: 'Open Sans', sans-serif;font-weight: bold;"> FANTASY / SCI-FI </h4>
             </button>
               <div id="sci-fnt" class="collapse">
                 <h5 style="font-family: 'Lora', serif;font-weight:400;font-style:italic;clear:both;">See the flying cars in the year 2000. (in a galaxy not so far away)</h5>
@@ -634,15 +637,55 @@ function indRand(){
   </div>
 </div>
 
+<div id="popupbck"></div>
+    <div id="popup">
+      <form id="form" action="mailto:begumcig@gmail.com" method="post" enctype="text/plain">
+
+        <input id="Close" type="button" value="X" style="border:none; background-color:#fffaff;text-align:right;position:absolute;top:0px;left:92%;color:#6f6d6f;text-decoration: none;font-family: 'Open Sans', sans-serif;font-weight:600" onclick="div_hide();" />  
+
+
+        <span class="popuptext">Name:</span><br>
+
+        <input type="text" name="name" id="name" placeholder="e.g. Donnie" autocomplete="off" autofocus><br>
+
+        <span class="popuptext">E-mail<span class="red">*</span>:</span><br>
+
+        <input type="text" name="mail" id="mail" placeholder="donnie@darko.com" autocomplete="off" pattern="\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\b" title="valid e-mail address" required><br><br>
+
+
+        <select id="reason" name="reason" onclick ="get_element()">
+
+          <option value="def" selected="true" disabled="disabled">What is the reason of your feedback?</option>
+          <option value="req">To request improvements</option>
+          <option value="com">Complaints about the website</option>
+          <option value="thx">Thank you message</option>
+          <option value="oth">Other</option>
+
+        </select><br><br>
+
+        <span class="popuptext">Comment<span class="red">*</span>:</span><br>
+
+        <textarea cols="25" wrap="hard" name="comment" id="comment" placeholder="they made me do it." autocomplete="off" required></textarea><br><br>
+
+        
+
+        <input id="sub" type="button" onclick="check_stuff()" value="Submit"/>
+
+
+
+        <input type="reset" value="Reset">
+      </form>
+    </div>
+
+
 <footer>
     <div class="container">
       <hr>
-
-      <p style="font-family: 'Open Sans', sans-serif;"> <small>Website by Begum Cig</small></p>
-      <p style="font-family: 'Open Sans', sans-serif;"><small><a href="https://github.com/begumcig">Github</a></small></p>
+      <p style="color:#6f6d6f;text-decoration: none;font-family: 'Open Sans', sans-serif;font-weight:300"> <small>Website by Begum Cig</small></p>
+      <p style="color:#6f6d6f;text-decoration: none;font-family: 'Open Sans', sans-serif;font-weight:"><small><a href="https://github.com/begumcig">Github</a></small></p>
       
         
-      </p>
+    
     </div> 
   </footer>
         
