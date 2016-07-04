@@ -63,3 +63,24 @@ function check_stuff()
 		var form = document.getElementById("form").submit();
 
 }
+
+function div_login()
+{
+	var loginbck = document.getElementById('loginbck');
+	var login = document.getElementById('login');
+	loginbck.style.display = "block";
+	login.style.display = "block";
+	login.style.opacity = "1";
+	$("#username").focus(); //for some reason the autofocus attribute didn't work, so i used jquery.
+
+}
+
+function login_hide()
+{
+	var formbck = document.getElementById('loginbck');
+var form = document.getElementById('login');
+formbck.style.display = "none";
+form.style.display = "none";
+form.style.opacity = "0";
+
+}

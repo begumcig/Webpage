@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,800);
+
+body
+{
+	background-color:#fffaff
+}
+h2, p
+{
+
+	text-align: center;
+		
+	color: #868787;
+}
+
+#info
+{
+	position:relative;
+	top: 10%;
+
+}
+
+#dark
+{
+
+	color:#383838;
+	font-weight: bold;
+}
+
+#tables
+{
+	font-family: 'Open Sans', sans-serif;
+}
+

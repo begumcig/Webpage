@@ -458,6 +458,7 @@ function indRand(){
   <div style="position:relative">
     <h1 style="text-align:center; color:black; font-family: 'Bevan', cursive; margin-bottom:90px;font-size:450%;">Which Movie Should I Watch Tonight? </h1>
     <input id="Feedback" type="button" value="Feedback" style="border:none; background-color:#fffaff;text-align:right;position:absolute;top:150px;left:92%;color:#6f6d6f;text-decoration: none;font-family: 'Open Sans', sans-serif;font-weight:300" onclick="div_show();" />  
+    <input id="Admin Login" type="button" value="Admin Login" style="border:none; background-color:#fffaff;text-align:right;position:absolute;top:150px;left:86%;color:#6f6d6f;text-decoration: none;font-family: 'Open Sans', sans-serif;font-weight:300" onclick="div_login();" />  
   </div>
 
 
@@ -637,9 +638,10 @@ function indRand(){
   </div>
 </div>
 
+
 <div id="popupbck"></div>
     <div id="popup">
-      <form id="form" action="mailto:begumcig@gmail.com" method="post" enctype="text/plain">
+      <form id="form" action="display.php" method="post">
 
         <input id="Close" type="button" value="X" style="border:none; background-color:#fffaff;text-align:right;position:absolute;top:0px;left:92%;color:#6f6d6f;text-decoration: none;font-family: 'Open Sans', sans-serif;font-weight:600" onclick="div_hide();" />  
 
@@ -656,10 +658,10 @@ function indRand(){
         <select id="reason" name="reason" onclick ="get_element()">
 
           <option value="def" selected="true" disabled="disabled">What is the reason of your feedback?</option>
-          <option value="req">To request improvements</option>
-          <option value="com">Complaints about the website</option>
-          <option value="thx">Thank you message</option>
-          <option value="oth">Other</option>
+          <option >To request improvements</option>
+          <option >Complaints about the website</option>
+          <option>Thank you message</option>
+          <option >Other</option>
 
         </select><br><br>
 
@@ -667,15 +669,32 @@ function indRand(){
 
         <textarea cols="25" wrap="hard" name="comment" id="comment" placeholder="they made me do it." autocomplete="off" required></textarea><br><br>
 
-        
-
         <input id="sub" type="button" onclick="check_stuff()" value="Submit"/>
-
-
 
         <input type="reset" value="Reset">
       </form>
     </div>
+
+    <div id="loginbck"></div>
+    <div id="login">
+      <form id="loginform" action="login.php" method="post">
+          <input id="Close" type="button" value="X" style="border:none; background-color:#fffaff;text-align:right;position:absolute;top:0px;left:92%;color:#6f6d6f;text-decoration: none;font-family: 'Open Sans', sans-serif;font-weight:600" onclick="login_hide();" />  
+
+          <span class="popuptext" style="font-size:80%">Please enter the admin password to continue. (note: the default is 1234) </span><br><br>
+          <span class="popuptext">Password<span class="red">*</span>:</span><br>
+
+          <input type="text" name="password" id="password" placeholder="1234" autocomplete="off" required><br><br>
+          
+          <input id="loginbut" type="submit" value="Login"/>
+
+          
+
+      </form>
+    </div>
+
+
+
+
 
 
 <footer>
